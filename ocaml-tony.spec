@@ -1,14 +1,14 @@
 Summary:	Simplistic XML parser for OCaml
 Summary(pl):	Prosty parser XML dla OCamla
 Name:		ocaml-tony
-Version:	0.8
-Release:	2
+Version:	0.9
+Release:	1
 License:	BSD
 Group:		Libraries
 Vendor:		Christian Lindig <lindig@ips.cs.tu-bs.de>
-#Source0:	http://www.cs.tu-bs.de/softech/people/lindig/software/download/tony-%{version}.tar.gz
-Source0:	tony-%{version}.tar.gz
-# Source0-md5:	ab59a7a13b37540e628e090d50682794
+URL:		http://www.st.cs.uni-sb.de/~lindig/src/index.html
+Source0:	http://www.st.cs.uni-sb.de/~lindig/src/ocaml-tony/tony-%{version}.tar.gz
+# Source0-md5:	4dbf125c149a491f1c8dffef91792cb5
 BuildRequires:	ocaml >= 3.07
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -44,14 +44,15 @@ reprezentacji.
 %setup -q -n tony-%{version}
 
 %build
+rm -f mylib/rc_scan.ml
 %{__make} clean
 %{__make}
 %{__make} all.opt
 ocamlc -a -o tony.cma \
-	error.cmo mylib/{lc,pp,std}.cmo xml.cmo xmlstate.cmo \
+	error.cmo mylib/{lc,pp,std,pc}.cmo xml.cmo xmlstate.cmo \
 	xmlparse.cmo xmlscan.cmo
 ocamlopt -a -o tony.cmxa \
-	error.cmx mylib/{lc,pp,std}.cmx xml.cmx xmlstate.cmx \
+	error.cmx mylib/{lc,pp,std,pc}.cmx xml.cmx xmlstate.cmx \
 	xmlparse.cmx xmlscan.cmx
 
 %install
