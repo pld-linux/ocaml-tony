@@ -2,14 +2,14 @@ Summary:	Simplistic XML parser for OCaml
 Summary(pl):	Prosty parser XML dla OCamla
 Name:		ocaml-tony
 Version:	0.8
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries
 Vendor:		Christian Lindig <lindig@ips.cs.tu-bs.de>
 #Source0:	http://www.cs.tu-bs.de/softech/people/lindig/software/download/tony-%{version}.tar.gz
 Source0:	tony-%{version}.tar.gz
 # Source0-md5:	ab59a7a13b37540e628e090d50682794
-BuildRequires:	ocaml >= 3.04-7
+BuildRequires:	ocaml >= 3.07
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
