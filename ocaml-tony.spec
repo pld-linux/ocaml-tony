@@ -12,7 +12,15 @@ BuildRequires:	ocaml >= 3.04-7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-No main packge.
+Tony is a simple XML parser and pretty printer. The parser is non
+validating and does neither comply fully to the standard nor does it
+use the DOM for internal representation of a parsed XML file.
+
+%description -l pl
+Tony jest prostym parserem XML. Mo¿e te¿ drukowaæ XML z wciêciami.
+Parser nie sprawdza wej¶cia wzglêdem DTD, nie jest te¿ w pe³ni
+kompatybilny ze standardem, nie u¿ywa nawet DOM jak wewnêtrznej
+reprezentacji.
 
 %package devel
 Summary:	Simplistic XML parser for OCaml
