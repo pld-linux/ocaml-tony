@@ -73,14 +73,12 @@ archive(native) = "tony.cmxa"
 linkopts = ""
 EOF
 
-gzip -9nf *.mli README CHANGES mylib/{lc,pp,std}.mli mylib/COPYING
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc *.gz */*.gz
+%doc *.mli README CHANGES mylib/{lc,pp,std}.mli mylib/COPYING
 %dir %{_libdir}/ocaml/tony
 %{_libdir}/ocaml/tony/*.cm[ixa]*
 %{_libdir}/ocaml/tony/*.a
