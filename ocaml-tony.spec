@@ -6,8 +6,9 @@ Release:	1
 License:	BSD
 Group:		Libraries
 Vendor:		Christian Lindig <lindig@ips.cs.tu-bs.de>
-URL:		http://www.cs.tu-bs.de/softech/people/lindig/software/tony.html
-Source0:	http://www.cs.tu-bs.de/softech/people/lindig/software/download/tony-%{version}.tar.gz
+#Source0:	http://www.cs.tu-bs.de/softech/people/lindig/software/download/tony-%{version}.tar.gz
+Source0:	tony-%{version}.tar.gz
+# Source0-md5:	ab59a7a13b37540e628e090d50682794
 BuildRequires:	ocaml >= 3.04-7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
