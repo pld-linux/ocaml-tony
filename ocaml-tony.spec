@@ -2,7 +2,7 @@ Summary:	Simplistic XML parser for OCaml
 Summary(pl):	Prosty analizator sk³adniowy XML-a dla OCamla
 Name:		ocaml-tony
 Version:	0.9
-Release:	3
+Release:	4
 License:	BSD
 Group:		Libraries
 Vendor:		Christian Lindig <lindig@ips.cs.tu-bs.de>
