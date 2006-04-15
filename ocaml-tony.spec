@@ -1,15 +1,15 @@
+%define		ocaml_ver	3.09.1
 Summary:	Simplistic XML parser for OCaml
 Summary(pl):	Prosty analizator sk³adniowy XML-a dla OCamla
 Name:		ocaml-tony
 Version:	0.9
-Release:	5
+Release:	6
 License:	BSD
 Group:		Libraries
-Vendor:		Christian Lindig <lindig@ips.cs.tu-bs.de>
 URL:		http://www.st.cs.uni-sb.de/~lindig/src/index.html
 Source0:	http://www.st.cs.uni-sb.de/~lindig/src/ocaml-tony/tony-%{version}.tar.gz
 # Source0-md5:	4dbf125c149a491f1c8dffef91792cb5
-BuildRequires:	ocaml >= 3.07
+BuildRequires:	ocaml >= %{ocaml_ver}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -19,8 +19,8 @@ use the DOM for internal representation of a parsed XML file.
 
 %description -l pl
 Tony jest prostym analizatorem sk³adniowym XML-a. Mo¿e te¿ drukowaæ
-XML z wciêciami. Analizator nie sprawdza wej¶cia wzglêdem DTD, nie jest
-te¿ w pe³ni kompatybilny ze standardem, nie u¿ywa nawet DOM jako
+XML z wciêciami. Analizator nie sprawdza wej¶cia wzglêdem DTD, nie
+jest te¿ w pe³ni kompatybilny ze standardem, nie u¿ywa nawet DOM jako
 wewnêtrznej reprezentacji.
 
 %package devel
@@ -34,8 +34,8 @@ Tony is a simple XML parser and pretty printer. The parser is non
 validating and does neither comply fully to the standard nor does it
 use the DOM for internal representation of a parsed XML file.
 
-This package contains files needed to develop OCaml programs using
-the Tony library.
+This package contains files needed to develop OCaml programs using the
+Tony library.
 
 %description devel -l pl
 Tony jest prostym analizatorem sk³adniowym XML-a. Mo¿e te¿ drukowaæ
