@@ -1,6 +1,6 @@
 %define		ocaml_ver	1:3.09.2
 Summary:	Simplistic XML parser for OCaml
-Summary(pl):	Prosty analizator sk³adniowy XML-a dla OCamla
+Summary(pl.UTF-8):   Prosty analizator skÅ‚adniowy XML-a dla OCamla
 Name:		ocaml-tony
 Version:	0.9
 Release:	8
@@ -17,15 +17,15 @@ Tony is a simple XML parser and pretty printer. The parser is non
 validating and does neither comply fully to the standard nor does it
 use the DOM for internal representation of a parsed XML file.
 
-%description -l pl
-Tony jest prostym analizatorem sk³adniowym XML-a. Mo¿e te¿ drukowaæ
-XML z wciêciami. Analizator nie sprawdza wej¶cia wzglêdem DTD, nie
-jest te¿ w pe³ni kompatybilny ze standardem, nie u¿ywa nawet DOM jako
-wewnêtrznej reprezentacji.
+%description -l pl.UTF-8
+Tony jest prostym analizatorem skÅ‚adniowym XML-a. MoÅ¼e teÅ¼ drukowaÄ‡
+XML z wciÄ™ciami. Analizator nie sprawdza wejÅ›cia wzglÄ™dem DTD, nie
+jest teÅ¼ w peÅ‚ni kompatybilny ze standardem, nie uÅ¼ywa nawet DOM jako
+wewnÄ™trznej reprezentacji.
 
 %package devel
 Summary:	Simplistic XML parser for OCaml - development part
-Summary(pl):	Prosty analizator sk³adniowy XML-a dla OCamla - cze¶æ programistyczna
+Summary(pl.UTF-8):   Prosty analizator skÅ‚adniowy XML-a dla OCamla - czeÅ›Ä‡ programistyczna
 Group:		Development/Libraries
 %requires_eq	ocaml
 
@@ -37,13 +37,13 @@ use the DOM for internal representation of a parsed XML file.
 This package contains files needed to develop OCaml programs using the
 Tony library.
 
-%description devel -l pl
-Tony jest prostym analizatorem sk³adniowym XML-a. Mo¿e te¿ drukowaæ
-XML z wciêciami. Parser nie sprawdza wej¶cia wzglêdem DTD, nie jest
-te¿ w pe³ni kompatybilny ze standardem, nie u¿ywa nawet DOM jako
-wewnêtrznej reprezentacji.
+%description devel -l pl.UTF-8
+Tony jest prostym analizatorem skÅ‚adniowym XML-a. MoÅ¼e teÅ¼ drukowaÄ‡
+XML z wciÄ™ciami. Parser nie sprawdza wejÅ›cia wzglÄ™dem DTD, nie jest
+teÅ¼ w peÅ‚ni kompatybilny ze standardem, nie uÅ¼ywa nawet DOM jako
+wewnÄ™trznej reprezentacji.
 
-Pakiet ten zawiera pliki niezbêdne do tworzenia programów u¿ywaj±cych
+Pakiet ten zawiera pliki niezbÄ™dne do tworzenia programÃ³w uÅ¼ywajÄ…cych
 biblioteki Tony.
 
 %prep
