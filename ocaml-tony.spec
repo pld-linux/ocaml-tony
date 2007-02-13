@@ -1,6 +1,6 @@
 %define		ocaml_ver	1:3.09.2
 Summary:	Simplistic XML parser for OCaml
-Summary(pl.UTF-8):   Prosty analizator składniowy XML-a dla OCamla
+Summary(pl.UTF-8):	Prosty analizator składniowy XML-a dla OCamla
 Name:		ocaml-tony
 Version:	0.9
 Release:	8
@@ -25,7 +25,7 @@ wewnętrznej reprezentacji.
 
 %package devel
 Summary:	Simplistic XML parser for OCaml - development part
-Summary(pl.UTF-8):   Prosty analizator składniowy XML-a dla OCamla - cześć programistyczna
+Summary(pl.UTF-8):	Prosty analizator składniowy XML-a dla OCamla - cześć programistyczna
 Group:		Development/Libraries
 %requires_eq	ocaml
 
